@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 @Component ({
     selector: 'my-app',
-    template: '<h1>My App Header</h1>'
+    template: '<h1>My App Header!</h1>'
     /*template: `<h1>{{title}}</h1>
     <p>{{appProperties.paragraph}}</p>
     <br>{{appProperties.content1}}
