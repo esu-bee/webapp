@@ -1,15 +1,11 @@
 ﻿import { Component } from '@angular/core';
 
 @Component({
-  //moduleId: module.id,
-  selector:    'editor',
-  templateUrl: './editor.html',
+  template: `<h2>Editor Component</h2>
+             <p>Edit your content</p>`
 })
 
-export class EditorComponent {
-  constructor() { }
-
-}
+export class EditorComponent {}
 
 
 

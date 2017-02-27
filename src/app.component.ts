@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 @Component ({
     selector: 'my-app',
-    template: '<h1>My App Header!</h1>'
-    /*template: `<h1>{{title}}</h1>
-    <p>{{appProperties.paragraph}}</p>
-    <br>{{appProperties.content1}}
-    <br>{{appProperties.content2}}`
-    */
+    template: `<h1>Angular Router</h1>
+            <nav>
+            <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+            <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+            <a routerLink="/editor" routerLinkActive="editor">Editor</a>
+            <a routerLink="/search" routerLinkActive="search">search</a>
+            </nav>
+            <router-outlet></router-outlet>`
 })
 
 export class AppComponent {   //we should enable the expermental feature for the error

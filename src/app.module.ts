@@ -5,14 +5,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 
 import { AppComponent }  from './app.component'; //my app.component.
+import { AppRoutingModule } from './models/route.config';
+
+import { HeroesModule }   from './component/heros/heroes.module';
+import { EditorModule }     from './component/editor/editor.module';
+import { SearchModule }     from './component/search/search.module';
+
+import { PageNotFoundComponent } from './models/not-found.component';
 
 @NgModule({
     
     //laods required dependencies to launch our app in the browser
-    imports:        [BrowserModule, FormsModule],
+    imports: [  BrowserModule, 
+                FormsModule, 
+                HeroesModule, 
+                EditorModule, 
+                SearchModule, 
+                AppRoutingModule
+            ],
 
     //
-    declarations:   [ AppComponent ],
+    declarations: [ AppComponent, PageNotFoundComponent ],
 
     //indicates our root Component.
     //(the component that needs to be loaded when pur app gets bootstraped.)
