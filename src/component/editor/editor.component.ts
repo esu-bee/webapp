@@ -1,8 +1,15 @@
 ﻿import { Component } from '@angular/core';
 
+var template: string = require('./editor.component.html');
+var style: string = require('./editor.component.css');
+
 @Component({
-  template: `<h2>Editor Component</h2>
-             <p>Edit your content</p>`
+    //moduleId: module.id,
+    template: template,
+    //template: require('./editor.component.html'),
+    //  template: `<h2>Editor Component</h2>
+    //           <p>Edit your content</p>`,
+    styles: [style]
 })
 
 export class EditorComponent {}

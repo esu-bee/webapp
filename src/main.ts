@@ -1,6 +1,6 @@
 import 'core-js';
 import 'reflect-metadata';
-import 'zone.js/dist/zone'
+import 'zone.js/dist/zone';
 
 //Angular library that will render the website
 //this will allow us to bootstrap or launch the app.

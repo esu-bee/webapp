@@ -10,8 +10,10 @@ module.exports = {
     },
     module: {
         loaders: [
-            {test: /\.ts$/, loader: 'ts-loader'},
-            { test: /\.json$/, loader: 'json-loader' }
+            { test: /\.ts$/, loader: 'ts-loader'},
+            { test: /\.json$/, loader: 'json-loader' },
+            { test: /\.html/,  loader: 'raw-loader' },
+            { test: /\.css$/,  loader: 'raw-loader' },
         ]
     },
     
